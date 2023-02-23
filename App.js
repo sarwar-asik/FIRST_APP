@@ -1,11 +1,17 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableHighlight, View } from "react-native";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
 
 export default function App() {
   return (
-    <View styles={styles.container}>
-      <Text>Open up App.js to start working on your</Text>
-      <Text>Open up App.js to start working on your</Text>
+    <View >
+          <Header></Header>
+      <TouchableHighlight style={styles.container}>
+      <Home></Home>
+      </TouchableHighlight>
+  
+     
       <StatusBar style="auto" />
     </View>
   );
