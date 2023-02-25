@@ -2,6 +2,10 @@ import React from "react";
 import { View, Text, Image, Button, StatusBar, StyleSheet } from "react-native";
 import AppOne from "../../AppOne";
 export default function Home() {
+
+
+
+  
   return (
     <View style={styles.mainContainer}>
       <View style={styles.card}>

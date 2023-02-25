@@ -5,12 +5,12 @@ import Home from "./components/Home/Home";
 
 export default function App() {
   return (
-    <View >
-          <Header></Header>
+    <View>
+      <Header></Header>
       <TouchableHighlight style={styles.container}>
-      <Home></Home>
+        <Home></Home>
       </TouchableHighlight>
-    
+
       <StatusBar style="auto" />
     </View>
   );
