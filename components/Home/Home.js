@@ -5,11 +5,13 @@ import AppOne from "../../AppOne";
 export default function Home() {
   return (
     <View style={styles.mainContainer}>
-      <View >
+      <View style={styles.card}>
         <Image
           style={styles.logo}
           source={{uri:"https://img.freepik.com/free-photo/coding-man_1098-18084.jpg?w=1060&t=st=1677345748~exp=1677346348~hmac=02f67a0aeb1f83b8896d69251f4139983464b6108af1f97e212aa214944bd607"}}
         />
+        <Text style={styles.text1}>React Native Developer</Text>
+        
       </View>
 
       {/* 
@@ -23,7 +25,7 @@ export default function Home() {
       />
       <StatusBar style="auto"></StatusBar> */}
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -31,11 +33,22 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "slate",
     marginHorizontal: "20px",
-    backgroundColor:"red"
+  },
+  card:{
+    backgroundColor:"#06b6d4",
+    padding:8,
+  },
+  text1:{
+    fontSize:30,
+    fontWeight:700,
+    color:"white",
+    marginVertical:8
   },
   logo: {
     height: "400px",
-    width:'500px'
+    width:'500px',
+  borderRadius:"10px",
+
 
 
   },
