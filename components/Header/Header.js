@@ -16,14 +16,15 @@ export default function Header() {
 
 const style = StyleSheet.create({
   containers: {
-    flex: 2,
+    display:"flex",
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "black",
-    marginTop: "20px",
-    padding: "20px",
+    padding: "9px",
+    marginBottom:5
   },
   text: {
+    flex:1,
     color: "white",
     font: "bold",
   },

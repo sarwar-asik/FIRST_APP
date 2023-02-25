@@ -10,8 +10,7 @@ export default function App() {
       <TouchableHighlight style={styles.container}>
       <Home></Home>
       </TouchableHighlight>
-  
-     
+    
       <StatusBar style="auto" />
     </View>
   );
