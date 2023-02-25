@@ -6,9 +6,9 @@ export default function Header() {
     <View style={style.containers}>
       <Text style={style.text}>Home</Text>
       <Text style={style.text}>Products</Text>
-      <Text style={style.text}></Text>
-      <Text style={style.text}>Headers</Text>
-      <Text style={style.text}>Headers</Text>
+      <Text style={style.text}>Projects</Text>
+      <Text style={style.text}>Blogs</Text>
+      <Text style={style.text}>About</Text>
       <StatusBar style="auto"></StatusBar>
     </View>
   );
@@ -17,15 +17,20 @@ export default function Header() {
 const style = StyleSheet.create({
   containers: {
     display:"flex",
+    gap:"",
+    flexDirection:"row",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "space-around",
     backgroundColor: "black",
-    padding: "9px",
-    marginBottom:5
+    marginBottom:5,
+    paddingVertical:"15px"
+
   },
   text: {
-    flex:1,
     color: "white",
     font: "bold",
+    fontSize:18,
+    fontWeight:600,
+    fontFamily:"robot"
   },
 });
